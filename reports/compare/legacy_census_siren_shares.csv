@@ -1,0 +1,4 @@
+file,level,activations,siren_activations,siren_share
+census_message_templates.csv,hromada,1169,0,0
+census_message_templates.csv,oblast,5400,5400,1
+census_message_templates.csv,raion,1,1,1

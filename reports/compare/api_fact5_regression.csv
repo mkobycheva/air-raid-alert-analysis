@@ -1,0 +1,6 @@
+metric,actual,expected_test_snapshot,discrepancy
+Lvivska+Volynska rows,188,188,False
+raion rows,188,188,False
+air_raid rows,188,188,False
+yellow rows,155,155,False
+red rows,33,33,False

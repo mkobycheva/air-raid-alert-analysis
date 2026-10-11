@@ -1,0 +1,21 @@
+oblast,raion,hromada,level,started_at,finished_at,duration_s,naive_guess,duration_days
+Kharkivska oblast,Kharkivskyi raion,Lypetska terytorialna hromada,hromada,2024-05-12 08:37:29+00:00,2026-01-06 09:53:57+00:00,52190188,False,604.053101852
+Kharkivska oblast,Chuhuivskyi raion,Vovchanska terytorialna hromada,hromada,2024-05-20 09:31:41+00:00,2025-08-01 22:52:43+00:00,37891262,False,438.556273148
+Donetska oblast,Pokrovskyi raion,Pokrovska terytorialna hromada,hromada,2026-07-26 14:38:44+00:00,2026-08-29 04:17:56+00:00,2900352,False,33.5688888889
+Dnipropetrovska oblast,Nikopolskyi raion,Chervonohryhorivska terytorialna hromada,hromada,2026-03-23 21:53:07+00:00,2026-04-19 05:12:29+00:00,2272762,False,26.3051157407
+Dnipropetrovska oblast,Nikopolskyi raion,Myrivska terytorialna hromada,hromada,2025-02-24 14:01:55+00:00,2025-03-17 03:07:56+00:00,1775161,False,20.5458449074
+Dnipropetrovska oblast,Nikopolskyi raion,Chervonohryhorivska terytorialna hromada,hromada,2026-03-03 20:50:20+00:00,2026-03-23 17:54:21+00:00,1717441,False,19.8777893519
+Dnipropetrovska oblast,Nikopolskyi raion,Myrivska terytorialna hromada,hromada,2025-01-12 07:37:02+00:00,2025-01-25 06:46:14+00:00,1120152,False,12.9647222222
+Dnipropetrovska oblast,Nikopolskyi raion,Myrivska terytorialna hromada,hromada,2025-04-07 10:50:26+00:00,2025-04-20 05:27:01+00:00,1103795,False,12.7754050926
+Dnipropetrovska oblast,Nikopolskyi raion,Chervonohryhorivska terytorialna hromada,hromada,2026-02-21 09:46:42+00:00,2026-03-02 17:20:09+00:00,804807,False,9.31489583333
+Dnipropetrovska oblast,Nikopolskyi raion,Chervonohryhorivska terytorialna hromada,hromada,2026-02-05 20:08:27+00:00,2026-02-14 07:37:42+00:00,732555,False,8.47864583333
+Dnipropetrovska oblast,Nikopolskyi raion,Myrivska terytorialna hromada,hromada,2024-12-15 11:52:36+00:00,2024-12-23 09:49:58+00:00,683842,False,7.91483796296
+Dnipropetrovska oblast,Nikopolskyi raion,m. Marhanets ta Marhanetska terytorialna hromada,hromada,2026-05-12 08:48:04+00:00,2026-05-20 05:28:02+00:00,679198,False,7.86108796296
+Dnipropetrovska oblast,Nikopolskyi raion,Chervonohryhorivska terytorialna hromada,hromada,2025-08-06 08:51:10+00:00,2025-08-13 14:19:27+00:00,624497,False,7.22797453704
+Dnipropetrovska oblast,Nikopolskyi raion,Chervonohryhorivska terytorialna hromada,hromada,2026-02-14 12:15:08+00:00,2026-02-21 09:39:05+00:00,595437,False,6.89163194444
+Dnipropetrovska oblast,Nikopolskyi raion,Chervonohryhorivska terytorialna hromada,hromada,2025-12-08 14:37:22+00:00,2025-12-15 11:32:56+00:00,593734,False,6.8719212963
+Dnipropetrovska oblast,Nikopolskyi raion,Chervonohryhorivska terytorialna hromada,hromada,2026-01-30 12:48:19+00:00,2026-02-05 16:04:11+00:00,530152,False,6.13601851852
+Dnipropetrovska oblast,Nikopolskyi raion,Chervonohryhorivska terytorialna hromada,hromada,2026-01-24 09:28:23+00:00,2026-01-30 11:47:46+00:00,526763,False,6.09679398148
+Dnipropetrovska oblast,Nikopolskyi raion,m. Marhanets ta Marhanetska terytorialna hromada,hromada,2026-08-28 05:42:26+00:00,2026-09-03 05:24:58+00:00,517352,False,5.98787037037
+Dnipropetrovska oblast,Nikopolskyi raion,m. Marhanets ta Marhanetska terytorialna hromada,hromada,2026-07-24 06:05:48+00:00,2026-07-30 05:26:36+00:00,516048,False,5.97277777778
+Dnipropetrovska oblast,Nikopolskyi raion,Chervonohryhorivska terytorialna hromada,hromada,2026-01-18 12:31:12+00:00,2026-01-24 07:12:44+00:00,499292,False,5.77884259259

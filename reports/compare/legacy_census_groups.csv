@@ -1,0 +1,9 @@
+file,upstream_class,level,template_group,count
+census_message_templates.csv,activated,hromada,artillery,1168
+census_message_templates.csv,activated,hromada,other,1
+census_message_templates.csv,activated,oblast,siren,5400
+census_message_templates.csv,activated,raion,siren,1
+census_message_templates.csv,deactivated,hromada,artillery,1165
+census_message_templates.csv,deactivated,hromada,other,1
+census_message_templates.csv,deactivated,oblast,siren,5390
+census_message_templates.csv,deactivated,raion,siren,1

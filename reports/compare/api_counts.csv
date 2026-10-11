@@ -1,0 +1,37 @@
+field,value,count
+alert_type,air_raid,16249
+alert_type,artillery_shelling,282
+alert_type,urban_fights,1
+alert_level,red,6284
+alert_level,yellow,10248
+location_type,city,1068
+location_type,hromada,1076
+location_type,oblast,219
+location_type,raion,14169
+oblast,Cherkaska oblast,614
+oblast,Chernihivska oblast,730
+oblast,Chernivetska oblast,50
+oblast,Dnipropetrovska oblast,2290
+oblast,Donetska oblast,577
+oblast,Ivano-Frankivska oblast,42
+oblast,Kharkivska oblast,2373
+oblast,Khersonska oblast,385
+oblast,Khmelnytska oblast,197
+oblast,Kirovohradska oblast,1096
+oblast,Kyiv City,217
+oblast,Kyivska oblast,1460
+oblast,Luhanska oblast,1
+oblast,Lvivska oblast,48
+oblast,Mykolaivska oblast,954
+oblast,Odeska oblast,876
+oblast,Poltavska oblast,760
+oblast,Rivnenska oblast,315
+oblast,Sumska oblast,1057
+oblast,Ternopilska oblast,126
+oblast,Vinnytska oblast,489
+oblast,Volynska oblast,140
+oblast,Zakarpatska oblast,18
+oblast,Zaporizka oblast,1205
+oblast,Zhytomyrska oblast,512
+oblast_resolution,location_oblast_name_fallback,16313
+oblast_resolution,location_oblast_uid,219

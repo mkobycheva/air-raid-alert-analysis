@@ -1,0 +1,6 @@
+pandas
+numpy
+pytest
+telethon>=1.36,<2
+requests # щоб репозиторій відтворювався
+matplotlib

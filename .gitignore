@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+data/processed/official_state.pkl
+
+# Local datasets, parser state, and credentials
+data/raw/
+data/processed/
+*.pkl
+*.session
+*.session-*
+.env
+.env.*
+alerts_in_ua/
+
+# Generated reports and macOS metadata
+reports/census_message_templates*.csv
+reports/*.json
+.DS_Store

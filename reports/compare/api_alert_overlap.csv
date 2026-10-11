@@ -1,0 +1,5 @@
+oblast,api_alert_level,api_threat_types,volunteer_intervals,overlapping_volunteer_intervals,share,start_utc,end_utc
+Lvivska oblast,red,none,96,3,0.03125,2026-09-11T08:31:59.112875+00:00,2026-10-08T04:47:44+00:00
+Lvivska oblast,yellow,none,96,6,0.0625,2026-09-11T08:31:59.112875+00:00,2026-10-08T04:47:44+00:00
+Volynska oblast,red,none,102,1,0.00980392156863,2026-09-11T08:31:59.112875+00:00,2026-10-08T04:47:44+00:00
+Volynska oblast,yellow,none,102,45,0.441176470588,2026-09-11T08:31:59.112875+00:00,2026-10-08T04:47:44+00:00
