@@ -1,5 +1,7 @@
 # Source comparison — descriptive only
 
+> Descriptive snapshot, not model selection or FINAL evidence. Results below retain their original inputs and windows; current project status is in [README](../../README.md).
+
 Existing components retained: official/volunteer loaders, UTC interval grid and exact unions, Telegram topup/census, API collector and their tests. The API collector is not run by this program.
 
 Official primary definition is B (oblast+raion); A and D are sensitivities. The official CSV has no alert-type field; variant B is a level-based definition, not a row-level siren label.

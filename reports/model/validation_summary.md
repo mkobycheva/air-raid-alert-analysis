@@ -1,6 +1,8 @@
 # Validation comparison and freeze
 
-VERIFIED: experiments ran in order: reference models → A → AB/ablations → recency → fixed long memory → HGB → SES ensemble. TEST was not evaluated. All numbers below use latest pooled results.csv records; stale runs remain in the append-only log and are ignored by latest_results.
+> Historical validation/progress snapshot. Statements about TEST not being evaluated or later stages being unstarted describe this report’s original stage. FINAL is now complete; see [final_test.md](final_test.md). Numeric results below are preserved unchanged.
+
+VERIFIED: experiments ran in order: reference models → A → AB/ablations → recency → fixed long memory → HGB → SES ensemble. TEST was not evaluated during selection; the later FINAL evaluation is recorded separately in final_test.md. All numbers below use latest pooled results.csv records; stale runs remain in the append-only log and are ignored by latest_results.
 
 VERIFIED: selected models (pooled VALID Brier; lead 0 separate):
 
@@ -33,7 +35,7 @@ VERIFIED: table, seven-day CIs for all three references, per-oblast TRAIN flags,
 - VERIFIED: universal long-memory improvement is not confirmed; retention failed at lead 0 (ABL BSS versus climatology 0.44136; paired gate in long_gains.csv).
 - VERIFIED: universal long-memory improvement is not confirmed; retention failed at lead 4 (ABL BSS versus climatology 0.05492; paired gate in long_gains.csv).
 - VERIFIED: universal long-memory improvement is not confirmed; retention failed at lead 5 (ABL BSS versus climatology 0.04979; paired gate in long_gains.csv).
-- HYPOTHESIS: validation gains will generalise beyond June–July; no FINAL evaluation of these frozen models exists.
+- HYPOTHESIS: At validation freeze, generalisation beyond June–July was unconfirmed. FINAL has since been completed; see final_test.md for the observed TEST evidence.
 - HYPOTHESIS: calendar features, rolling refits or robustness to A/D/earlier TRAIN_START will help; these remain unstarted.
 
 VERIFIED: reported CIs are conditional on validation selection and do not adjust for tuning or multiple comparisons. Existing artificial-close, definition-break, incomplete-adjacency and earlier TEST-overlap limitations remain. No HGB/software library/network provenance was inferred from a live service.

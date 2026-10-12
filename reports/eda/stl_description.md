@@ -1,5 +1,7 @@
 Descriptive, two-sided STL on 180 complete TRAIN days gives NATIONAL F_T=0.1453 and F_S=0.0000.
 
+> Descriptive snapshot, not model selection or FINAL evidence. Results below retain their original inputs and windows; current project status is in [README](../../README.md).
+
 The trend component has the larger NATIONAL variance-reduction strength under this decomposition; this is not forecast skill.
 
 The east/center/west representatives were chosen from first-fold TRAIN rates: highest east, center nearest the overall median, and lowest west; their individual strengths are in stl_strength.csv.

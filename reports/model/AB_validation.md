@@ -1,5 +1,7 @@
 # Step AB: validation only
 
+> Historical validation/progress snapshot. Statements about TEST not being evaluated or later stages being unstarted describe this report’s original stage. FINAL is now complete; see [final_test.md](final_test.md). Numeric results below are preserved unchanged.
+
 VERIFIED: run 49c1b9df8760bf2f; 25-hour embargo, independent fold fits, pooled TRAIN, no class resampling, no calendar/identity/STL features, no TEST.
 
 C is chosen across the four VALID folds for each lead, not separately on each fold. Recency fixes the previous selected C and selects half-life on VALID. These validation-selected metrics are descriptive selection scores, not unbiased final performance. CI uses paired circular seven-day UTC blocks; one-day sensitivity and all three references are in the bootstrap table. Per-region and excluded-flagged metrics are logged.

@@ -1,5 +1,7 @@
 # Reference validation only
 
+> Historical validation/progress snapshot. Statements about TEST not being evaluated or later stages being unstarted describe this report’s original stage. FINAL is now complete; see [final_test.md](final_test.md). Numeric results below are preserved unchanged.
+
 Run: 3157b3124f2a6925; git: 25e9fea78a073e1d35a5d0b9db19ba36a8fdd3a5; dirty worktree: True
 
 Parameters: `{"alphas": [0.01, 0.05, 0.1, 0.3, 0.6], "block_days": 7, "bootstrap_samples": 300, "day_windows": [7, 14, 28], "dirty_worktree": true, "ece_bins": 10, "embargo_hours": 25, "flag_high": 0.95, "flag_low": 0.03, "fold_boundaries": ["2026-06-01", "2026-06-16", "2026-07-01", "2026-07-16", "2026-08-01"], "input_sha256": "b396f87696243069eec0219880e87dcd642b20beb0a7bae0d0e1f61e1ed20ec4", "leads": [0, 1, 2, 3, 4, 5, 6, 12, 24], "official": "data/raw/official_data_en.csv", "seed": 42, "source_sha256": "bb68e1e24ddc174b3fcce7615a6816a839078110f438d85b3c9a164c6a684773", "test_start": "2026-08-01", "train_start": "2025-12-01", "validation_label_boundary": "2026-08-01T00:00:00+00:00", "variant": "B", "week_windows": [4, 8]}`

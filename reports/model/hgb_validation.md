@@ -1,5 +1,7 @@
 # hgb: validation only
 
+> Historical validation/progress snapshot. Statements about TEST not being evaluated or later stages being unstarted describe this report’s original stage. FINAL is now complete; see [final_test.md](final_test.md). Numeric results below are preserved unchanged.
+
 VERIFIED: run 3d8fa45bd7f5114f. Full 8-point HGB grid at all nine leads. Explicit chronological stopping/calibration TRAIN tails with 25-hour inner gaps; no random split. Raw VALID ECE >0.03 triggers TRAIN-tail Platt, logging both versions.
 
 Four independent fold fits, 25-hour embargo; no TEST. VALID selects candidates, so scores/CIs are descriptive selection results and do not adjust for selection/multiple comparisons. Seven-day paired blocks are primary; one-day sensitivity is saved.

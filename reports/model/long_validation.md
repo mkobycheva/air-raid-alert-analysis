@@ -1,5 +1,7 @@
 # long: validation only
 
+> Historical validation/progress snapshot. Statements about TEST not being evaluated or later stages being unstarted describe this report’s original stage. FINAL is now complete; see [final_test.md](final_test.md). Numeric results below are preserved unchanged.
+
 VERIFIED: run 69afb997281b6d84. Fixed 672-hour exact share and 336-hour EWMA half-life; no window/half-life tuning. ABL retention requires positive gain CI against AB with matched recency. SES is comparison only. Unweighted AB comparison is also saved.
 
 Four independent fold fits, 25-hour embargo; no TEST. VALID selects candidates, so scores/CIs are descriptive selection results and do not adjust for selection/multiple comparisons. Seven-day paired blocks are primary; one-day sensitivity is saved.

@@ -1,5 +1,7 @@
 # ensemble: validation only
 
+> Historical validation/progress snapshot. Statements about TEST not being evaluated or later stages being unstarted describe this report’s original stage. FINAL is now complete; see [final_test.md](final_test.md). Numeric results below are preserved unchanged.
+
 VERIFIED: run b4c2e7b7541abb31. Fixed SES averaging weights {0.25,0.5,0.75} selected on pooled VALID; learned base respects context/long-memory/recency gates. No other optional experiment run.
 
 Four independent fold fits, 25-hour embargo; no TEST. VALID selects candidates, so scores/CIs are descriptive selection results and do not adjust for selection/multiple comparisons. Seven-day paired blocks are primary; one-day sensitivity is saved.
