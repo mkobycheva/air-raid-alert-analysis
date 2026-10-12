@@ -1,0 +1,217 @@
+fold_id,lead,model,fitted_json,flagged_oblasts
+1,0,climatology,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,0,persistence_hard,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,0,persistence_prob,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,0,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k0"", ""train_brier"": 0.11705330723616424}",Dnipropetrovska oblast;Zakarpatska oblast
+1,0,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k0"", ""train_brier"": 0.1281259924387669}",Dnipropetrovska oblast;Zakarpatska oblast
+1,0,ses,"{""chosen"": 0.3, ""column"": ""ses_0.3"", ""train_brier"": 0.09353121801264234}",Dnipropetrovska oblast;Zakarpatska oblast
+1,1,climatology,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,1,persistence_hard,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,1,persistence_prob,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,1,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k1"", ""train_brier"": 0.11705656233742187}",Dnipropetrovska oblast;Zakarpatska oblast
+1,1,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k1"", ""train_brier"": 0.12797948342219262}",Dnipropetrovska oblast;Zakarpatska oblast
+1,1,ses,"{""chosen"": 0.05, ""column"": ""ses_0.05"", ""train_brier"": 0.10817556169568066}",Dnipropetrovska oblast;Zakarpatska oblast
+1,2,climatology,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,2,persistence_hard,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,2,persistence_prob,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,2,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k2"", ""train_brier"": 0.11705993981090722}",Dnipropetrovska oblast;Zakarpatska oblast
+1,2,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k2"", ""train_brier"": 0.12799882129347975}",Dnipropetrovska oblast;Zakarpatska oblast
+1,2,ses,"{""chosen"": 0.05, ""column"": ""ses_0.05"", ""train_brier"": 0.11050338276095752}",Dnipropetrovska oblast;Zakarpatska oblast
+1,3,climatology,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,3,persistence_hard,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,3,persistence_prob,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,3,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k3"", ""train_brier"": 0.11706038035092706}",Dnipropetrovska oblast;Zakarpatska oblast
+1,3,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k3"", ""train_brier"": 0.12800481753263854}",Dnipropetrovska oblast;Zakarpatska oblast
+1,3,ses,"{""chosen"": 0.05, ""column"": ""ses_0.05"", ""train_brier"": 0.11208836451510165}",Dnipropetrovska oblast;Zakarpatska oblast
+1,4,climatology,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,4,persistence_hard,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,4,persistence_prob,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,4,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k4"", ""train_brier"": 0.11705634206741196}",Dnipropetrovska oblast;Zakarpatska oblast
+1,4,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k4"", ""train_brier"": 0.12800077007120636}",Dnipropetrovska oblast;Zakarpatska oblast
+1,4,ses,"{""chosen"": 0.01, ""column"": ""ses_0.01"", ""train_brier"": 0.11267431397777701}",Dnipropetrovska oblast;Zakarpatska oblast
+1,5,climatology,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,5,persistence_hard,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,5,persistence_prob,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,5,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k5"", ""train_brier"": 0.11706761254958593}",Dnipropetrovska oblast;Zakarpatska oblast
+1,5,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k5"", ""train_brier"": 0.12800931471200766}",Dnipropetrovska oblast;Zakarpatska oblast
+1,5,ses,"{""chosen"": 0.01, ""column"": ""ses_0.01"", ""train_brier"": 0.1129874588509692}",Dnipropetrovska oblast;Zakarpatska oblast
+1,6,climatology,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,6,persistence_hard,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,6,persistence_prob,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,6,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k6"", ""train_brier"": 0.11706350084273419}",Dnipropetrovska oblast;Zakarpatska oblast
+1,6,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k6"", ""train_brier"": 0.12800751584026002}",Dnipropetrovska oblast;Zakarpatska oblast
+1,6,ses,"{""chosen"": 0.01, ""column"": ""ses_0.01"", ""train_brier"": 0.11322708822893134}",Dnipropetrovska oblast;Zakarpatska oblast
+1,12,climatology,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,12,persistence_hard,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,12,persistence_prob,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,12,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k12"", ""train_brier"": 0.11707431854766556}",Dnipropetrovska oblast;Zakarpatska oblast
+1,12,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k12"", ""train_brier"": 0.12803989553171752}",Dnipropetrovska oblast;Zakarpatska oblast
+1,12,ses,"{""chosen"": 0.01, ""column"": ""ses_0.01"", ""train_brier"": 0.11418284625725092}",Dnipropetrovska oblast;Zakarpatska oblast
+1,24,climatology,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,24,persistence_hard,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,24,persistence_prob,{},Dnipropetrovska oblast;Zakarpatska oblast
+1,24,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k24"", ""train_brier"": 0.11780259873178534}",Dnipropetrovska oblast;Zakarpatska oblast
+1,24,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k24"", ""train_brier"": 0.12812609146962528}",Dnipropetrovska oblast;Zakarpatska oblast
+1,24,ses,"{""chosen"": 0.01, ""column"": ""ses_0.01"", ""train_brier"": 0.115897113638555}",Dnipropetrovska oblast;Zakarpatska oblast
+2,0,climatology,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,0,persistence_hard,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,0,persistence_prob,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,0,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k0"", ""train_brier"": 0.11529913027220894}",Dnipropetrovska oblast;Zakarpatska oblast
+2,0,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k0"", ""train_brier"": 0.12639248169499567}",Dnipropetrovska oblast;Zakarpatska oblast
+2,0,ses,"{""chosen"": 0.3, ""column"": ""ses_0.3"", ""train_brier"": 0.09289529824701584}",Dnipropetrovska oblast;Zakarpatska oblast
+2,1,climatology,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,1,persistence_hard,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,1,persistence_prob,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,1,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k1"", ""train_brier"": 0.115345360623801}",Dnipropetrovska oblast;Zakarpatska oblast
+2,1,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k1"", ""train_brier"": 0.12629788624337285}",Dnipropetrovska oblast;Zakarpatska oblast
+2,1,ses,"{""chosen"": 0.05, ""column"": ""ses_0.05"", ""train_brier"": 0.1068286221379363}",Dnipropetrovska oblast;Zakarpatska oblast
+2,2,climatology,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,2,persistence_hard,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,2,persistence_prob,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,2,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k2"", ""train_brier"": 0.11538896925904756}",Dnipropetrovska oblast;Zakarpatska oblast
+2,2,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k2"", ""train_brier"": 0.1263587959463993}",Dnipropetrovska oblast;Zakarpatska oblast
+2,2,ses,"{""chosen"": 0.05, ""column"": ""ses_0.05"", ""train_brier"": 0.10913318219923794}",Dnipropetrovska oblast;Zakarpatska oblast
+2,3,climatology,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,3,persistence_hard,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,3,persistence_prob,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,3,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k3"", ""train_brier"": 0.11540874513665356}",Dnipropetrovska oblast;Zakarpatska oblast
+2,3,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k3"", ""train_brier"": 0.12638136022274774}",Dnipropetrovska oblast;Zakarpatska oblast
+2,3,ses,"{""chosen"": 0.05, ""column"": ""ses_0.05"", ""train_brier"": 0.11066956619144766}",Dnipropetrovska oblast;Zakarpatska oblast
+2,4,climatology,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,4,persistence_hard,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,4,persistence_prob,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,4,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k4"", ""train_brier"": 0.11542844191074911}",Dnipropetrovska oblast;Zakarpatska oblast
+2,4,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k4"", ""train_brier"": 0.1264018480319475}",Dnipropetrovska oblast;Zakarpatska oblast
+2,4,ses,"{""chosen"": 0.01, ""column"": ""ses_0.01"", ""train_brier"": 0.11108526361729412}",Dnipropetrovska oblast;Zakarpatska oblast
+2,5,climatology,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,5,persistence_hard,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,5,persistence_prob,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,5,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k5"", ""train_brier"": 0.11543593414323641}",Dnipropetrovska oblast;Zakarpatska oblast
+2,5,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k5"", ""train_brier"": 0.1264037860679529}",Dnipropetrovska oblast;Zakarpatska oblast
+2,5,ses,"{""chosen"": 0.01, ""column"": ""ses_0.01"", ""train_brier"": 0.11137602291604816}",Dnipropetrovska oblast;Zakarpatska oblast
+2,6,climatology,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,6,persistence_hard,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,6,persistence_prob,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,6,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k6"", ""train_brier"": 0.1154177403358389}",Dnipropetrovska oblast;Zakarpatska oblast
+2,6,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k6"", ""train_brier"": 0.1263792837555991}",Dnipropetrovska oblast;Zakarpatska oblast
+2,6,ses,"{""chosen"": 0.01, ""column"": ""ses_0.01"", ""train_brier"": 0.1115905432257097}",Dnipropetrovska oblast;Zakarpatska oblast
+2,12,climatology,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,12,persistence_hard,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,12,persistence_prob,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,12,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k12"", ""train_brier"": 0.11538895795854609}",Dnipropetrovska oblast;Zakarpatska oblast
+2,12,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k12"", ""train_brier"": 0.12637637670159102}",Dnipropetrovska oblast;Zakarpatska oblast
+2,12,ses,"{""chosen"": 0.01, ""column"": ""ses_0.01"", ""train_brier"": 0.1124466082859386}",Dnipropetrovska oblast;Zakarpatska oblast
+2,24,climatology,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,24,persistence_hard,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,24,persistence_prob,{},Dnipropetrovska oblast;Zakarpatska oblast
+2,24,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k24"", ""train_brier"": 0.11598410472899066}",Dnipropetrovska oblast;Zakarpatska oblast
+2,24,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k24"", ""train_brier"": 0.12629124154849725}",Dnipropetrovska oblast;Zakarpatska oblast
+2,24,ses,"{""chosen"": 0.01, ""column"": ""ses_0.01"", ""train_brier"": 0.11391048645645845}",Dnipropetrovska oblast;Zakarpatska oblast
+3,0,climatology,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,0,persistence_hard,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,0,persistence_prob,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,0,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k0"", ""train_brier"": 0.11409438408907521}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,0,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k0"", ""train_brier"": 0.1248671710932052}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,0,ses,"{""chosen"": 0.3, ""column"": ""ses_0.3"", ""train_brier"": 0.09217066362003595}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,1,climatology,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,1,persistence_hard,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,1,persistence_prob,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,1,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k1"", ""train_brier"": 0.11409805803544618}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,1,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k1"", ""train_brier"": 0.12474394003112434}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,1,ses,"{""chosen"": 0.05, ""column"": ""ses_0.05"", ""train_brier"": 0.10579495112658767}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,2,climatology,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,2,persistence_hard,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,2,persistence_prob,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,2,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k2"", ""train_brier"": 0.11410197341257865}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,2,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k2"", ""train_brier"": 0.12475988495837433}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,2,ses,"{""chosen"": 0.05, ""column"": ""ses_0.05"", ""train_brier"": 0.10799457624391069}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,3,climatology,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,3,persistence_hard,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,3,persistence_prob,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,3,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k3"", ""train_brier"": 0.11409313494730908}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,3,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k3"", ""train_brier"": 0.12476335683769489}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,3,ses,"{""chosen"": 0.01, ""column"": ""ses_0.01"", ""train_brier"": 0.10942335012629721}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,4,climatology,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,4,persistence_hard,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,4,persistence_prob,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,4,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k4"", ""train_brier"": 0.11408743508193928}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,4,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k4"", ""train_brier"": 0.12476695730513843}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,4,ses,"{""chosen"": 0.01, ""column"": ""ses_0.01"", ""train_brier"": 0.10974700246630893}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,5,climatology,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,5,persistence_hard,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,5,persistence_prob,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,5,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k5"", ""train_brier"": 0.1140818506834554}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,5,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k5"", ""train_brier"": 0.12475962778212836}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,5,ses,"{""chosen"": 0.01, ""column"": ""ses_0.01"", ""train_brier"": 0.11001577611197161}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,6,climatology,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,6,persistence_hard,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,6,persistence_prob,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,6,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k6"", ""train_brier"": 0.11406762726250495}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,6,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k6"", ""train_brier"": 0.12474149685678765}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,6,ses,"{""chosen"": 0.01, ""column"": ""ses_0.01"", ""train_brier"": 0.11022572673053077}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,12,climatology,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,12,persistence_hard,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,12,persistence_prob,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,12,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k12"", ""train_brier"": 0.11402875690990015}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,12,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k12"", ""train_brier"": 0.12472593769390662}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,12,ses,"{""chosen"": 0.01, ""column"": ""ses_0.01"", ""train_brier"": 0.11109442389951886}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,24,climatology,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,24,persistence_hard,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,24,persistence_prob,{},Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,24,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k24"", ""train_brier"": 0.11467187091953648}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,24,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k24"", ""train_brier"": 0.12472760933950541}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+3,24,ses,"{""chosen"": 0.01, ""column"": ""ses_0.01"", ""train_brier"": 0.11257233528354649}",Dnipropetrovska oblast;Donetska oblast;Zakarpatska oblast
+4,0,climatology,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,0,persistence_hard,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,0,persistence_prob,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,0,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k0"", ""train_brier"": 0.11283031091310407}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,0,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k0"", ""train_brier"": 0.12369455766240664}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,0,ses,"{""chosen"": 0.3, ""column"": ""ses_0.3"", ""train_brier"": 0.09133906554787449}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,1,climatology,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,1,persistence_hard,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,1,persistence_prob,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,1,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k1"", ""train_brier"": 0.11283040891468714}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,1,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k1"", ""train_brier"": 0.12356678165577156}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,1,ses,"{""chosen"": 0.05, ""column"": ""ses_0.05"", ""train_brier"": 0.1047127439769215}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,2,climatology,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,2,persistence_hard,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,2,persistence_prob,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,2,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k2"", ""train_brier"": 0.11282916429458203}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,2,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k2"", ""train_brier"": 0.1235703832139497}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,2,ses,"{""chosen"": 0.05, ""column"": ""ses_0.05"", ""train_brier"": 0.10687670879311353}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,3,climatology,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,3,persistence_hard,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,3,persistence_prob,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,3,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k3"", ""train_brier"": 0.11283047751579528}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,3,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k3"", ""train_brier"": 0.12357602565509543}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,3,ses,"{""chosen"": 0.01, ""column"": ""ses_0.01"", ""train_brier"": 0.10818898297479697}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,4,climatology,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,4,persistence_hard,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,4,persistence_prob,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,4,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k4"", ""train_brier"": 0.11283619100808875}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,4,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k4"", ""train_brier"": 0.1235815480443019}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,4,ses,"{""chosen"": 0.01, ""column"": ""ses_0.01"", ""train_brier"": 0.1085123203646236}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,5,climatology,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,5,persistence_hard,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,5,persistence_prob,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,5,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k5"", ""train_brier"": 0.11284785319647508}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,5,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k5"", ""train_brier"": 0.1235869503815691}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,5,ses,"{""chosen"": 0.01, ""column"": ""ses_0.01"", ""train_brier"": 0.10879038069430869}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,6,climatology,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,6,persistence_hard,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,6,persistence_prob,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,6,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k6"", ""train_brier"": 0.11284318832112056}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,6,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k6"", ""train_brier"": 0.12357446497988492}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,6,ses,"{""chosen"": 0.01, ""column"": ""ses_0.01"", ""train_brier"": 0.1090107059424789}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,12,climatology,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,12,persistence_hard,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,12,persistence_prob,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,12,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k12"", ""train_brier"": 0.1127911102798727}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,12,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k12"", ""train_brier"": 0.1235575376564477}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,12,ses,"{""chosen"": 0.01, ""column"": ""ses_0.01"", ""train_brier"": 0.109848747033735}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,24,climatology,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,24,persistence_hard,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,24,persistence_prob,{},Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,24,seasonal_day,"{""chosen"": 28, ""column"": ""day_28_k24"", ""train_brier"": 0.11344958799813987}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,24,seasonal_week,"{""chosen"": 8, ""column"": ""week_8_k24"", ""train_brier"": 0.12362452663856092}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast
+4,24,ses,"{""chosen"": 0.01, ""column"": ""ses_0.01"", ""train_brier"": 0.11129942414364069}",Dnipropetrovska oblast;Donetska oblast;Ivano-Frankivska oblast;Lvivska oblast;Zakarpatska oblast

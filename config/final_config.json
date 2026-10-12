@@ -1,0 +1,767 @@
+{
+  "bootstrap": {
+    "block_days": 7,
+    "samples": 300
+  },
+  "deferred": [
+    "calendar ablation",
+    "rolling refit",
+    "robustness A/D and alternative TRAIN_START"
+  ],
+  "embargo_hours": 25,
+  "feature_information": "starts<=T; finishes known only if<=T",
+  "flag_thresholds": {
+    "fit_on": "TRAIN target rate per fold/lead",
+    "high": 0.95,
+    "low": 0.03
+  },
+  "fold_boundaries": [
+    "2026-06-01",
+    "2026-06-16",
+    "2026-07-01",
+    "2026-07-16",
+    "2026-08-01"
+  ],
+  "inputs_sha256": {
+    "official": "b396f87696243069eec0219880e87dcd642b20beb0a7bae0d0e1f61e1ed20ec4",
+    "panel": "d058c844815f241d2c8cfe5394048da99306b77191ff0c094c1bb8293cc7fb0a"
+  },
+  "limitations": [
+    "artificial closures not corrected",
+    "earlier exploration overlapped TEST",
+    "December 2025 definition break",
+    "incomplete in-panel adjacency",
+    "June-July validation only",
+    "selection/multiple comparisons not covered by CIs"
+  ],
+  "model_selection": "pooled walk-forward VALID Brier with prior feature retention gates",
+  "models": {
+    "0": {
+      "ensemble_weight": null,
+      "features": [
+        "active_now",
+        "hours_since_end",
+        "elapsed_in_alert",
+        "share_1h",
+        "share_6h",
+        "share_24h",
+        "share_168h",
+        "starts_24h"
+      ],
+      "half_life": "inf",
+      "hyperparameters": {
+        "base_rate_fit": "actual inner fitting subset",
+        "calibration": {
+          "C": 1000000.0,
+          "epsilon": 1e-06,
+          "fit_on": "chronological TRAIN calibration tail only",
+          "method": "none",
+          "tail_days": 14
+        },
+        "calibration_tail_days": 14,
+        "early_stopping": {
+          "inner_embargo_hours": 25,
+          "method": "chronological TRAIN Brier",
+          "min_improvement": 1e-05,
+          "patience_trees": 30,
+          "step_trees": 10,
+          "tail_days": 14
+        },
+        "l2_regularization": 0.0,
+        "learning_rate": 0.05,
+        "max_bins": 255,
+        "max_depth": 5,
+        "max_iter": 100,
+        "max_leaf_nodes": 31,
+        "min_samples_leaf": 20,
+        "random_state": 42,
+        "refit": "pre-calibration TRAIN; choose iterations afresh on TRAIN"
+      },
+      "model": "hgb",
+      "validation_brier": 0.0548177027917844,
+      "validation_run_id": "3d8fa45bd7f5114f"
+    },
+    "1": {
+      "ensemble_weight": 0.75,
+      "ensemble_weight_definition": "weight on learned base model; remaining weight on SES",
+      "features": [
+        "active_now",
+        "hours_since_end",
+        "elapsed_in_alert",
+        "share_1h",
+        "share_6h",
+        "share_24h",
+        "share_168h",
+        "starts_24h",
+        "base_rate",
+        "neighbor_share_now",
+        "neighbor_share_6h",
+        "national_active_count",
+        "share_672h",
+        "ewma_14d"
+      ],
+      "half_life": 14.0,
+      "hyperparameters": {
+        "base_model": {
+          "ensemble_weight": null,
+          "features": [
+            "active_now",
+            "hours_since_end",
+            "elapsed_in_alert",
+            "share_1h",
+            "share_6h",
+            "share_24h",
+            "share_168h",
+            "starts_24h",
+            "base_rate",
+            "neighbor_share_now",
+            "neighbor_share_6h",
+            "national_active_count",
+            "share_672h",
+            "ewma_14d"
+          ],
+          "half_life": 14.0,
+          "hyperparameters": {
+            "C": 0.1,
+            "class_weight": null,
+            "fixed_long_memory": {
+              "ewma_half_life_hours": 336,
+              "ewma_initial_level": 0.0,
+              "ewma_origin": "2022-03-15T00:00:00+00:00",
+              "share_hours": 672
+            },
+            "max_iter": 1000,
+            "penalty": "l2",
+            "scaler": "TRAIN-only StandardScaler",
+            "solver": "lbfgs"
+          },
+          "model": "logreg_ABL"
+        },
+        "ses": {
+          "ensemble_weight": null,
+          "features": [],
+          "half_life": "inf",
+          "hyperparameters": {
+            "alpha_candidates": [
+              0.01,
+              0.05,
+              0.1,
+              0.3,
+              0.6
+            ],
+            "alpha_selection": "minimise TRAIN Brier separately per lead",
+            "initialization": "first warmup indicator",
+            "observation": "last completed hourly touch indicator",
+            "seasonality": false,
+            "trend": false,
+            "warmup_days": 56
+          },
+          "model": "ses"
+        }
+      },
+      "model": "ens_ses_logreg_ABL",
+      "validation_brier": 0.0868341069539691,
+      "validation_run_id": "b4c2e7b7541abb31"
+    },
+    "12": {
+      "ensemble_weight": 0.25,
+      "ensemble_weight_definition": "weight on learned base model; remaining weight on SES",
+      "features": [
+        "active_now",
+        "hours_since_end",
+        "elapsed_in_alert",
+        "share_1h",
+        "share_6h",
+        "share_24h",
+        "share_168h",
+        "starts_24h",
+        "base_rate",
+        "neighbor_share_now",
+        "neighbor_share_6h",
+        "national_active_count",
+        "share_672h",
+        "ewma_14d"
+      ],
+      "half_life": "inf",
+      "hyperparameters": {
+        "base_model": {
+          "ensemble_weight": null,
+          "features": [
+            "active_now",
+            "hours_since_end",
+            "elapsed_in_alert",
+            "share_1h",
+            "share_6h",
+            "share_24h",
+            "share_168h",
+            "starts_24h",
+            "base_rate",
+            "neighbor_share_now",
+            "neighbor_share_6h",
+            "national_active_count",
+            "share_672h",
+            "ewma_14d"
+          ],
+          "half_life": "inf",
+          "hyperparameters": {
+            "C": 10.0,
+            "class_weight": null,
+            "fixed_long_memory": {
+              "ewma_half_life_hours": 336,
+              "ewma_initial_level": 0.0,
+              "ewma_origin": "2022-03-15T00:00:00+00:00",
+              "share_hours": 672
+            },
+            "max_iter": 1000,
+            "penalty": "l2",
+            "scaler": "TRAIN-only StandardScaler",
+            "solver": "lbfgs"
+          },
+          "model": "logreg_ABL"
+        },
+        "ses": {
+          "ensemble_weight": null,
+          "features": [],
+          "half_life": "inf",
+          "hyperparameters": {
+            "alpha_candidates": [
+              0.01,
+              0.05,
+              0.1,
+              0.3,
+              0.6
+            ],
+            "alpha_selection": "minimise TRAIN Brier separately per lead",
+            "initialization": "first warmup indicator",
+            "observation": "last completed hourly touch indicator",
+            "seasonality": false,
+            "trend": false,
+            "warmup_days": 56
+          },
+          "model": "ses"
+        }
+      },
+      "model": "ens_ses_logreg_ABL",
+      "validation_brier": 0.0930602329354866,
+      "validation_run_id": "b4c2e7b7541abb31"
+    },
+    "2": {
+      "ensemble_weight": 0.75,
+      "ensemble_weight_definition": "weight on learned base model; remaining weight on SES",
+      "features": [
+        "active_now",
+        "hours_since_end",
+        "elapsed_in_alert",
+        "share_1h",
+        "share_6h",
+        "share_24h",
+        "share_168h",
+        "starts_24h",
+        "base_rate",
+        "neighbor_share_now",
+        "neighbor_share_6h",
+        "national_active_count",
+        "share_672h",
+        "ewma_14d"
+      ],
+      "half_life": 14.0,
+      "hyperparameters": {
+        "base_model": {
+          "ensemble_weight": null,
+          "features": [
+            "active_now",
+            "hours_since_end",
+            "elapsed_in_alert",
+            "share_1h",
+            "share_6h",
+            "share_24h",
+            "share_168h",
+            "starts_24h",
+            "base_rate",
+            "neighbor_share_now",
+            "neighbor_share_6h",
+            "national_active_count",
+            "share_672h",
+            "ewma_14d"
+          ],
+          "half_life": 14.0,
+          "hyperparameters": {
+            "C": 0.1,
+            "class_weight": null,
+            "fixed_long_memory": {
+              "ewma_half_life_hours": 336,
+              "ewma_initial_level": 0.0,
+              "ewma_origin": "2022-03-15T00:00:00+00:00",
+              "share_hours": 672
+            },
+            "max_iter": 1000,
+            "penalty": "l2",
+            "scaler": "TRAIN-only StandardScaler",
+            "solver": "lbfgs"
+          },
+          "model": "logreg_ABL"
+        },
+        "ses": {
+          "ensemble_weight": null,
+          "features": [],
+          "half_life": "inf",
+          "hyperparameters": {
+            "alpha_candidates": [
+              0.01,
+              0.05,
+              0.1,
+              0.3,
+              0.6
+            ],
+            "alpha_selection": "minimise TRAIN Brier separately per lead",
+            "initialization": "first warmup indicator",
+            "observation": "last completed hourly touch indicator",
+            "seasonality": false,
+            "trend": false,
+            "warmup_days": 56
+          },
+          "model": "ses"
+        }
+      },
+      "model": "ens_ses_logreg_ABL",
+      "validation_brier": 0.0902811024598933,
+      "validation_run_id": "b4c2e7b7541abb31"
+    },
+    "24": {
+      "ensemble_weight": 0.5,
+      "ensemble_weight_definition": "weight on learned base model; remaining weight on SES",
+      "features": [
+        "active_now",
+        "hours_since_end",
+        "elapsed_in_alert",
+        "share_1h",
+        "share_6h",
+        "share_24h",
+        "share_168h",
+        "starts_24h",
+        "base_rate",
+        "neighbor_share_now",
+        "neighbor_share_6h",
+        "national_active_count",
+        "share_672h",
+        "ewma_14d"
+      ],
+      "half_life": "inf",
+      "hyperparameters": {
+        "base_model": {
+          "ensemble_weight": null,
+          "features": [
+            "active_now",
+            "hours_since_end",
+            "elapsed_in_alert",
+            "share_1h",
+            "share_6h",
+            "share_24h",
+            "share_168h",
+            "starts_24h",
+            "base_rate",
+            "neighbor_share_now",
+            "neighbor_share_6h",
+            "national_active_count",
+            "share_672h",
+            "ewma_14d"
+          ],
+          "half_life": "inf",
+          "hyperparameters": {
+            "base_rate_fit": "actual inner fitting subset",
+            "calibration": {
+              "C": 1000000.0,
+              "epsilon": 1e-06,
+              "fit_on": "chronological TRAIN calibration tail only",
+              "method": "none",
+              "tail_days": 14
+            },
+            "calibration_tail_days": 14,
+            "early_stopping": {
+              "inner_embargo_hours": 25,
+              "method": "chronological TRAIN Brier",
+              "min_improvement": 1e-05,
+              "patience_trees": 30,
+              "step_trees": 10,
+              "tail_days": 14
+            },
+            "fixed_long_memory": {
+              "ewma_half_life_hours": 336,
+              "ewma_initial_level": 0.0,
+              "ewma_origin": "2022-03-15T00:00:00+00:00",
+              "share_hours": 672
+            },
+            "l2_regularization": 0.0,
+            "learning_rate": 0.05,
+            "max_bins": 255,
+            "max_depth": 3,
+            "max_iter": 300,
+            "max_leaf_nodes": 31,
+            "min_samples_leaf": 20,
+            "random_state": 42,
+            "refit": "pre-calibration TRAIN; choose iterations afresh on TRAIN"
+          },
+          "model": "hgb"
+        },
+        "ses": {
+          "ensemble_weight": null,
+          "features": [],
+          "half_life": "inf",
+          "hyperparameters": {
+            "alpha_candidates": [
+              0.01,
+              0.05,
+              0.1,
+              0.3,
+              0.6
+            ],
+            "alpha_selection": "minimise TRAIN Brier separately per lead",
+            "initialization": "first warmup indicator",
+            "observation": "last completed hourly touch indicator",
+            "seasonality": false,
+            "trend": false,
+            "warmup_days": 56
+          },
+          "model": "ses"
+        }
+      },
+      "model": "ens_ses_hgb",
+      "validation_brier": 0.0927761441499366,
+      "validation_run_id": "b4c2e7b7541abb31"
+    },
+    "3": {
+      "ensemble_weight": 0.75,
+      "ensemble_weight_definition": "weight on learned base model; remaining weight on SES",
+      "features": [
+        "active_now",
+        "hours_since_end",
+        "elapsed_in_alert",
+        "share_1h",
+        "share_6h",
+        "share_24h",
+        "share_168h",
+        "starts_24h",
+        "base_rate",
+        "neighbor_share_now",
+        "neighbor_share_6h",
+        "national_active_count",
+        "share_672h",
+        "ewma_14d"
+      ],
+      "half_life": 30.0,
+      "hyperparameters": {
+        "base_model": {
+          "ensemble_weight": null,
+          "features": [
+            "active_now",
+            "hours_since_end",
+            "elapsed_in_alert",
+            "share_1h",
+            "share_6h",
+            "share_24h",
+            "share_168h",
+            "starts_24h",
+            "base_rate",
+            "neighbor_share_now",
+            "neighbor_share_6h",
+            "national_active_count",
+            "share_672h",
+            "ewma_14d"
+          ],
+          "half_life": 30.0,
+          "hyperparameters": {
+            "C": 0.1,
+            "class_weight": null,
+            "fixed_long_memory": {
+              "ewma_half_life_hours": 336,
+              "ewma_initial_level": 0.0,
+              "ewma_origin": "2022-03-15T00:00:00+00:00",
+              "share_hours": 672
+            },
+            "max_iter": 1000,
+            "penalty": "l2",
+            "scaler": "TRAIN-only StandardScaler",
+            "solver": "lbfgs"
+          },
+          "model": "logreg_ABL"
+        },
+        "ses": {
+          "ensemble_weight": null,
+          "features": [],
+          "half_life": "inf",
+          "hyperparameters": {
+            "alpha_candidates": [
+              0.01,
+              0.05,
+              0.1,
+              0.3,
+              0.6
+            ],
+            "alpha_selection": "minimise TRAIN Brier separately per lead",
+            "initialization": "first warmup indicator",
+            "observation": "last completed hourly touch indicator",
+            "seasonality": false,
+            "trend": false,
+            "warmup_days": 56
+          },
+          "model": "ses"
+        }
+      },
+      "model": "ens_ses_logreg_ABL",
+      "validation_brier": 0.0910344832006188,
+      "validation_run_id": "b4c2e7b7541abb31"
+    },
+    "4": {
+      "ensemble_weight": 0.5,
+      "ensemble_weight_definition": "weight on learned base model; remaining weight on SES",
+      "features": [
+        "active_now",
+        "hours_since_end",
+        "elapsed_in_alert",
+        "share_1h",
+        "share_6h",
+        "share_24h",
+        "share_168h",
+        "starts_24h",
+        "base_rate",
+        "neighbor_share_now",
+        "neighbor_share_6h",
+        "national_active_count"
+      ],
+      "half_life": 30.0,
+      "hyperparameters": {
+        "base_model": {
+          "ensemble_weight": null,
+          "features": [
+            "active_now",
+            "hours_since_end",
+            "elapsed_in_alert",
+            "share_1h",
+            "share_6h",
+            "share_24h",
+            "share_168h",
+            "starts_24h",
+            "base_rate",
+            "neighbor_share_now",
+            "neighbor_share_6h",
+            "national_active_count"
+          ],
+          "half_life": 30.0,
+          "hyperparameters": {
+            "C": 0.01,
+            "class_weight": null,
+            "max_iter": 1000,
+            "penalty": "l2",
+            "scaler": "TRAIN-only StandardScaler",
+            "solver": "lbfgs"
+          },
+          "model": "logreg_AB_hl30"
+        },
+        "ses": {
+          "ensemble_weight": null,
+          "features": [],
+          "half_life": "inf",
+          "hyperparameters": {
+            "alpha_candidates": [
+              0.01,
+              0.05,
+              0.1,
+              0.3,
+              0.6
+            ],
+            "alpha_selection": "minimise TRAIN Brier separately per lead",
+            "initialization": "first warmup indicator",
+            "observation": "last completed hourly touch indicator",
+            "seasonality": false,
+            "trend": false,
+            "warmup_days": 56
+          },
+          "model": "ses"
+        }
+      },
+      "model": "ens_ses_logreg_AB_hl30",
+      "validation_brier": 0.0914661970376456,
+      "validation_run_id": "b4c2e7b7541abb31"
+    },
+    "5": {
+      "ensemble_weight": 0.5,
+      "ensemble_weight_definition": "weight on learned base model; remaining weight on SES",
+      "features": [
+        "active_now",
+        "hours_since_end",
+        "elapsed_in_alert",
+        "share_1h",
+        "share_6h",
+        "share_24h",
+        "share_168h",
+        "starts_24h",
+        "base_rate",
+        "neighbor_share_now",
+        "neighbor_share_6h",
+        "national_active_count"
+      ],
+      "half_life": 30.0,
+      "hyperparameters": {
+        "base_model": {
+          "ensemble_weight": null,
+          "features": [
+            "active_now",
+            "hours_since_end",
+            "elapsed_in_alert",
+            "share_1h",
+            "share_6h",
+            "share_24h",
+            "share_168h",
+            "starts_24h",
+            "base_rate",
+            "neighbor_share_now",
+            "neighbor_share_6h",
+            "national_active_count"
+          ],
+          "half_life": 30.0,
+          "hyperparameters": {
+            "C": 0.01,
+            "class_weight": null,
+            "max_iter": 1000,
+            "penalty": "l2",
+            "scaler": "TRAIN-only StandardScaler",
+            "solver": "lbfgs"
+          },
+          "model": "logreg_AB_hl30"
+        },
+        "ses": {
+          "ensemble_weight": null,
+          "features": [],
+          "half_life": "inf",
+          "hyperparameters": {
+            "alpha_candidates": [
+              0.01,
+              0.05,
+              0.1,
+              0.3,
+              0.6
+            ],
+            "alpha_selection": "minimise TRAIN Brier separately per lead",
+            "initialization": "first warmup indicator",
+            "observation": "last completed hourly touch indicator",
+            "seasonality": false,
+            "trend": false,
+            "warmup_days": 56
+          },
+          "model": "ses"
+        }
+      },
+      "model": "ens_ses_logreg_AB_hl30",
+      "validation_brier": 0.0919261478928928,
+      "validation_run_id": "b4c2e7b7541abb31"
+    },
+    "6": {
+      "ensemble_weight": 0.5,
+      "ensemble_weight_definition": "weight on learned base model; remaining weight on SES",
+      "features": [
+        "active_now",
+        "hours_since_end",
+        "elapsed_in_alert",
+        "share_1h",
+        "share_6h",
+        "share_24h",
+        "share_168h",
+        "starts_24h",
+        "base_rate",
+        "neighbor_share_now",
+        "neighbor_share_6h",
+        "national_active_count",
+        "share_672h",
+        "ewma_14d"
+      ],
+      "half_life": 14.0,
+      "hyperparameters": {
+        "base_model": {
+          "ensemble_weight": null,
+          "features": [
+            "active_now",
+            "hours_since_end",
+            "elapsed_in_alert",
+            "share_1h",
+            "share_6h",
+            "share_24h",
+            "share_168h",
+            "starts_24h",
+            "base_rate",
+            "neighbor_share_now",
+            "neighbor_share_6h",
+            "national_active_count",
+            "share_672h",
+            "ewma_14d"
+          ],
+          "half_life": 14.0,
+          "hyperparameters": {
+            "C": 0.1,
+            "class_weight": null,
+            "fixed_long_memory": {
+              "ewma_half_life_hours": 336,
+              "ewma_initial_level": 0.0,
+              "ewma_origin": "2022-03-15T00:00:00+00:00",
+              "share_hours": 672
+            },
+            "max_iter": 1000,
+            "penalty": "l2",
+            "scaler": "TRAIN-only StandardScaler",
+            "solver": "lbfgs"
+          },
+          "model": "logreg_ABL"
+        },
+        "ses": {
+          "ensemble_weight": null,
+          "features": [],
+          "half_life": "inf",
+          "hyperparameters": {
+            "alpha_candidates": [
+              0.01,
+              0.05,
+              0.1,
+              0.3,
+              0.6
+            ],
+            "alpha_selection": "minimise TRAIN Brier separately per lead",
+            "initialization": "first warmup indicator",
+            "observation": "last completed hourly touch indicator",
+            "seasonality": false,
+            "trend": false,
+            "warmup_days": 56
+          },
+          "model": "ses"
+        }
+      },
+      "model": "ens_ses_logreg_ABL",
+      "validation_brier": 0.0923422308408316,
+      "validation_run_id": "b4c2e7b7541abb31"
+    }
+  },
+  "official_variant": "B",
+  "primary_leads": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "secondary_leads": [
+    12,
+    24
+  ],
+  "seed": 42,
+  "separate_nowcast_lead": 0,
+  "status": "frozen_validation_only",
+  "target": "variant-B interval touches [T+k,T+k+1h)",
+  "test_evaluated": false,
+  "test_start": "2026-08-01",
+  "train_start": "2025-12-01",
+  "versions": {
+    "numpy": "1.26.4",
+    "pandas": "3.0.3",
+    "python": "3.12.6",
+    "sklearn": "1.6.1"
+  }
+}

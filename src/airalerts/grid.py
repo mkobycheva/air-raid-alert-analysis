@@ -59,16 +59,17 @@ def time_grid(df: pd.DataFrame, start: str | pd.Timestamp,
 
 
 def episodes(df: pd.DataFrame, oblast: str, start: str | pd.Timestamp,
-             end: str | pd.Timestamp) -> pd.DataFrame:
-    """Merge strictly overlapping closed intervals, clipping to the window.
+             end: str | pd.Timestamp, merge_adjacent: bool = False) -> pd.DataFrame:
+    """Merge overlapping closed intervals, clipping to the window.
 
-    Abutting half-open intervals remain separate episodes (no overlap).
+    Abutting half-open intervals remain separate unless merge_adjacent=True.
+    Features use this option to treat continuous state as one activation.
     """
     start, end = _window(start, end)
     rows = _clipped(df.loc[df["oblast"].eq(oblast)], start, end).sort_values("started_at")
     merged: list[tuple[pd.Timestamp, pd.Timestamp]] = []
     for a, b in rows[["started_at", "finished_at"]].itertuples(index=False, name=None):
-        if merged and a < merged[-1][1]:
+        if merged and (a < merged[-1][1] or (merge_adjacent and a == merged[-1][1])):
             merged[-1] = (merged[-1][0], max(merged[-1][1], b))
         else:
             merged.append((a, b))

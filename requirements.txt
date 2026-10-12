@@ -4,3 +4,6 @@ pytest
 telethon>=1.36,<2
 requests # щоб репозиторій відтворювався
 matplotlib
+pyarrow
+statsmodels
+scikit-learn

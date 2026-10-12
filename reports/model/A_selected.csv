@@ -1,0 +1,10 @@
+model,lead,C,half_life,run_id
+logreg_A,0,0.01,inf,19e91e2083bdf3a2
+logreg_A,1,10.0,inf,19e91e2083bdf3a2
+logreg_A,2,10.0,inf,19e91e2083bdf3a2
+logreg_A,3,10.0,inf,19e91e2083bdf3a2
+logreg_A,4,10.0,inf,19e91e2083bdf3a2
+logreg_A,5,10.0,inf,19e91e2083bdf3a2
+logreg_A,6,1.0,inf,19e91e2083bdf3a2
+logreg_A,12,10.0,inf,19e91e2083bdf3a2
+logreg_A,24,1.0,inf,19e91e2083bdf3a2
