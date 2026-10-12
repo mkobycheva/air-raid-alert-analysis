@@ -18,3 +18,7 @@ alerts_in_ua/
 reports/census_message_templates*.csv
 reports/*.json
 .DS_Store
+
+data/geo/
+geoBoundaries-UKR-ADM1.geojson
+metadata-geoboundaries-ukr-adm1-geojson.json
