@@ -33,7 +33,8 @@ def hourly_ewma(rows: pd.DataFrame, oblast: str, times: pd.DatetimeIndex) -> np.
 
 def observed_features(events: pd.DataFrame, panel: pd.DataFrame,
                       neighbors: dict[str, tuple[str, ...]] | None = None,
-                      include_long_memory: bool = False) -> pd.DataFrame:
+                      include_long_memory: bool = False,
+                      final_test: bool = False) -> pd.DataFrame:
     """Vectorized equivalent of own_features over the existing bounded panel.
 
     Merging full intervals is safe here: coverage/starts at or before T and the
@@ -43,7 +44,7 @@ def observed_features(events: pd.DataFrame, panel: pd.DataFrame,
     """
     neighbors = NEIGHBORS if neighbors is None else neighbors
     validate_neighbors(panel.oblast.unique().tolist(), neighbors)
-    if panel.empty or panel["T"].ge(pd.Timestamp("2026-08-01", tz="UTC")).any():
+    if panel.empty or (not final_test and panel["T"].ge(pd.Timestamp("2026-08-01", tz="UTC")).any()):
         raise ValueError("Require nonempty panel wholly before reserved TEST")
     end = panel["T"].max() + pd.Timedelta(hours=1)
     rows = official_variant(events, "B")
